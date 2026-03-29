@@ -6,6 +6,8 @@ metadata:
   labels:
     app.kubernetes.io/managed-by: management-api
 spec:
+  name: "Console"
+  subdomain: "console.jpm.com"
   gatewayType: envoy
   replicas: 2
   nodes:
@@ -19,6 +21,3 @@ spec:
       datacenter: "eu-west-1"
       region: "eu-west-1"
       status: "running"
-status:
-  phase: Pending
-  observedGeneration: 0
